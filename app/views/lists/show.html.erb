@@ -1,3 +1,7 @@
 <%= @list.name %>
 
-<p><%= link_to "Add a Movie to this List", new_list_bookmark_path(@list) %></p>
+<%= simple_form_for [@list, @bookmark] do |l| %>
+  <%= l.association :movie %>
+  <%= l.input :comment , placehoder: "comment" %>
+  <%= l.submit %>
+<% end %>
