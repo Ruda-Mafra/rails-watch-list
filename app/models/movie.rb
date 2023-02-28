@@ -5,4 +5,5 @@ class Movie < ApplicationRecord
   validates :overview, presence: true
 
 #test
+#testtest
 end
