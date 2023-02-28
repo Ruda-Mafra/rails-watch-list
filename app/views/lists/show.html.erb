@@ -1,5 +1,4 @@
 <%= @list.name %>
-
 <%= simple_form_for [@list, @bookmark] do |l| %>
   <%= l.association :movie %>
   <%= l.input :comment , placehoder: "comment" %>
